@@ -1,0 +1,81 @@
+task:
+
+
+1>. CREATE table student1(roll_no int PRIMARY KEY AUTO_INCREMENT not null,
+                      name varchar(20),branch varchar (30));
+
+
+    INSERT into student1(name,branch) VALUES('jay','computer science'),
+    ('suhani','electronic and com'),('kirti','electronic and com')
+
+
+2>. CREATE TABLE exam(roll_no int not null, s_code varchar(20),
+    mark int not null,p_code varchar(20),FOREIGN KEY(roll_no)REFERENCES 
+    student1(roll_no));
+
+    Insert into exam(s_code,mark,p_code)values('E1104',45,'EC'),('CS110',45,'CS'),
+    ('EC1106',67,'EC')
+
+
+
+task2: Create table biodata(fname varchar(20) not null,lname varchar(30) not null,
+      address varchar(40) not null,city varchar(40) not null,age int not null));
+
+
+
+
+     INSERT INTO `s1` (`fname`, `lname`, `address`, `city`, `age`) VALUES 
+     ('micky', 'man', '234 east wood ', 'perth', '67')
+
+
+
+task 3:
+
+ 1==== create table employee(emp_id int not null primary key,fname varchar(30),lname varchar(40),
+  salary int not null,joining_date date,depart varchar(30));
+
+ 1> insert into employee(1,'john','brown','southland',22000,12/9/22,'trainer') so no...
+
+
+ 2====create table incentive(emp_ref_id not null primary key,incentive_date date not null,
+            incentive_amount int not null));
+
+
+ 2> insert into incentive(1,12/9/22,3000) so no.....
+
+
+
+  1> Select * from employee where name ='tom'
+
+  2> Select fname,joining_date,salary from employee
+
+  3> SELECT * FROM employee ORDER BY first_name DES;
+
+     SELECT * FROM employee ORDER BY first_name ASC;
+
+  4> SELECT * FROM employee WHERE FIRST_NAME='J';
+
+  5> SELECT F_NAME,INCENTIVE_AMOUNT 
+     FROM EMPLOYEE INNER JOIN INCENTIVE
+     ON EMPLOYEE.EMPLOYEE_ID=INCENTIVE .EMP_REF_ID 
+     AND INCENTIVE_AMOUNT >3000;
+	
+
+  6> create table employees(
+  EMP_ID int PRIMARY KEY AUTO_INCREMENT NOT Null,
+  lname varchar(20) NOT null,
+  fname varchar(20) NOT null,
+  SALARY INT NOT null,JOINING_DATE DATE NOT NULL,
+  );
+
+
+  insert into employees(fname,lname,email) values ("JOHN","BROWN",33000,12/2/2022),
+  ("jitesh","kajeria",22000,23/2/2022),
+  ("mitesh","dajeria",23000,14/3/2022),
+  ("ritesh","rajeria",23000,15/3/2022),
+  ("nitesh","tajeria",24000,16/5/2022)
+
+
+
+
+
